@@ -7,70 +7,225 @@
     tools:context=".Registro">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtdireccion"
+        android:layout_width="168dp"
+        android:layout_height="66dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Nombre"
-        android:inputType="textPersonName"
-
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="155dp"
+        android:hint="@string/direcci_n"
+        android:inputType="textPostalAddress"
+        android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <EditText
+        android:id="@+id/txnombre"
+        android:layout_width="158dp"
+        android:layout_height="65dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nombre"
+
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <EditText
+        android:id="@+id/textidentificacon"
+        android:layout_width="161dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="@string/identificaci_n"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="165dp"
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtedad"
+        android:layout_width="158dp"
+        android:layout_height="59dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Teléfono"
+        android:hint="@string/edad"
         android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="229dp"
-        tools:ignore="MissingConstraints" />
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="174dp" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txttelefono"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
         android:ems="10"
-        android:hint="identificación"
+        android:hint="@string/tel_fono"
         android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="297dp"
-        tools:ignore="MissingConstraints" />
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="87dp"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/editTextNumber4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtnota1"
+        android:layout_width="106dp"
+        android:layout_height="76dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Edad"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="366dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextTextPostalAddress2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Dirección"
-        android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="442dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        android:hint="@string/nota_1"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="507dp" />
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <EditText
+        android:id="@+id/txtnota5"
+        android:layout_width="110dp"
+        android:layout_height="71dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nota_5"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+    <EditText
+        android:id="@+id/txtnota2"
+        android:layout_width="114dp"
+        android:layout_height="74dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nota_2"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <EditText
+        android:id="@+id/txtmateria1"
+        android:layout_width="107dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="Materia 1"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="338dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/txtnota3"
+        android:layout_width="121dp"
+        android:layout_height="78dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nota_3"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <EditText
+        android:id="@+id/txtnota4"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nota_4"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+    <Button
+        android:id="@+id/buttonresultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="676dp"
+        android:backgroundTint="#f4282e"
+        android:text="@string/ver_resultados"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="112dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regístro"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="24dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonatras1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f4282e"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <EditText
+        android:id="@+id/txtmateria2"
+        android:layout_width="114dp"
+        android:layout_height="78dp"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:hint="Materia 2"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="340dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtmateria3"
+        android:layout_width="121dp"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:hint="Materia 3"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="340dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtmateria4"
+        android:layout_width="110dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="Materia 4"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <EditText
+        android:id="@+id/txtmateria5"
+        android:layout_width="114dp"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Materia 5"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="501dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,39 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#181818"
+    >
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="400px"
-        android:layout_height="43dp"
-        android:text="Bienvendo Usuario"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="268dp"
+
+    <Button
+        android:id="@+id/buttonayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#f4282e"
+        android:orientation="vertical"
+        android:text="@string/ayuda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="?Ayuda"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:id="@+id/buttoniniciarregistro"
+        android:layout_width="319dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#f4282e"
+        android:gravity="center"
+        android:text="@string/iniciar_reg_stro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonestadisticas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar Regístro"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#f4282e"
+        android:text="@string/estad_sticas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoniniciarregistro"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button3"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estadísticas"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="412dp" />
+        android:text="¡Bienvenido Usuario!"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttoniniciarregistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
