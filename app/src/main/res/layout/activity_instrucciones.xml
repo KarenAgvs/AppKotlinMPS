@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -60,19 +61,21 @@
         android:id="@+id/textView6"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="36dp"
         android:text="Posteriormente a que hayas puesto tus datos en el formulario clickearás el botón que indica 'Ver resultados'"
         android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="314dp" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
+        android:layout_width="257dp"
+        android:layout_height="50dp"
         android:text="Se cargará una pantalla con tus resultados"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="387dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="378dp" />
+</FrameLayout>
