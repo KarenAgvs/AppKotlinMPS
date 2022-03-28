@@ -1,14 +1,20 @@
 <resources>
     <string name="app_name">AppKotlin2</string>
     <string name="ayuda">Ayuda</string>
+    <string name="atras">Atrás</string>
     <string name="iniciar_reg_stro">Iniciar Regístro</string>
-    <string name="bienvendo_usuario">Bienvendo Usuario</string>
+    <string name="bienvendo_usuario">¡Bienvendo Usuario!</string>
     <string name="estad_sticas">Estadísticas</string>
     <string name="nota_3">Nota 3</string>
     <string name="nota_5">Nota 5</string>
     <string name="nota_1">Nota 1</string>
     <string name="nota_2">Nota 2</string>
     <string name="nota_4">Nota 4</string>
+    <string name="materia1">Materia 1</string>
+    <string name ="materia2">Materia 2</string>
+    <string name="materia3">Materia 3</string>
+    <string name="materia4">Materia 4</string>
+    <string name="materia5">Materia 5</string>
     <string name="direcci_n">Dirección</string>
     <string name="edad">Edad</string>
     <string name="nombre">Nombre</string>

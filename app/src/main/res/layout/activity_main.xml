@@ -37,15 +37,15 @@
         android:layout_marginTop="52dp"
         android:backgroundTint="#f4282e"
         android:layout_gravity="right|center_vertical"
-        android:layout_marginRight="125dp"
+        android:layout_marginRight="110dp"
         android:text="@string/estad_sticas"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textbienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¡Bienvenido Usuario!"
+        android:text="@string/bienvendo_usuario"
         android:layout_marginTop="250dp"
         android:textColor="#fff"
         android:textSize="30sp"
