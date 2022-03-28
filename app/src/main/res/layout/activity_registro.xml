@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".Registro"
+    android:background="#181818"
+    >
 
     <EditText
         android:id="@+id/txtdireccion"
@@ -17,7 +19,9 @@
         android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="247dp" />
+        tools:layout_editor_absoluteY="247dp"
+        android:backgroundTint="#fff"
+        />
 
     <EditText
         android:id="@+id/txnombre"
@@ -31,7 +35,9 @@
         android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="87dp" />
+        tools:layout_editor_absoluteY="87dp"
+        android:backgroundTint="#fff"
+        />
 
     <EditText
         android:id="@+id/textidentificacon"
@@ -44,7 +50,8 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="165dp"
-        android:autofillHints="" />
+        android:autofillHints=""
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtedad"
@@ -57,7 +64,8 @@
         android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="174dp" />
+        tools:layout_editor_absoluteY="174dp"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txttelefono"
@@ -71,7 +79,8 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="234dp"
         tools:layout_editor_absoluteY="87dp"
-        android:autofillHints="" />
+        android:autofillHints=""
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtnota1"
@@ -84,7 +93,8 @@
         android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="418dp" />
+        tools:layout_editor_absoluteY="418dp"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtnota5"
@@ -97,7 +107,8 @@
         android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="572dp" />
+        tools:layout_editor_absoluteY="572dp"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtnota2"
@@ -110,7 +121,8 @@
         android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="418dp" />
+        tools:layout_editor_absoluteY="418dp"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtmateria1"
@@ -118,10 +130,12 @@
         android:layout_height="80dp"
         android:ems="10"
         android:hint="Materia 1"
+        android:textColorHint="#757575"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="338dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="#fff"/>
 
 
     <EditText
@@ -135,7 +149,8 @@
         android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="413dp" />
+        tools:layout_editor_absoluteY="413dp"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtnota4"
@@ -148,7 +163,8 @@
         android:textColorHint="#757575"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="572dp" />
+        tools:layout_editor_absoluteY="572dp"
+        android:backgroundTint="#fff"/>
 
     <Button
         android:id="@+id/buttonresultados"
@@ -157,42 +173,36 @@
         android:layout_marginTop="676dp"
         android:backgroundTint="#f4282e"
         android:text="@string/ver_resultados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="112dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Regístro"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="24dp"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonatras1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="308dp"
         android:backgroundTint="#f4282e"
         android:text="Atrás"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="5dp" />
+        app:layout_constraintVertical_bias="0.989"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txtmateria2"
         android:layout_width="114dp"
         android:layout_height="78dp"
         android:ems="10"
-
+        android:textColorHint="#757575"
         android:inputType="textPersonName"
         android:hint="Materia 2"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="340dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtmateria3"
@@ -200,10 +210,12 @@
         android:layout_height="73dp"
         android:ems="10"
         android:hint="Materia 3"
+        android:textColorHint="#757575"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="276dp"
         tools:layout_editor_absoluteY="340dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtmateria4"
@@ -211,10 +223,12 @@
         android:layout_height="69dp"
         android:ems="10"
         android:hint="Materia 4"
+        android:textColorHint="#757575"
         android:inputType="textPersonName"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="503dp" />
+        tools:layout_editor_absoluteY="503dp"
+        android:backgroundTint="#fff"/>
 
     <EditText
         android:id="@+id/txtmateria5"
@@ -223,9 +237,11 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Materia 5"
+        android:textColorHint="#757575"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="501dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="#fff"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
