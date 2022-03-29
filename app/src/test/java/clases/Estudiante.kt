@@ -1,9 +1,10 @@
 package clases
 
-class Estudiante {
 
-    var documento: String=""
+public class Estudiante {
+
     var nombre: String=""
+    var documento: String=""
     var edad: Int=0
     var telefono: String=""
     var direccion: String=""

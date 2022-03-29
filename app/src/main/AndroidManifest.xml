@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppKotlin2">
         <activity
+            android:name=".Estadisticas"
+            android:exported="false" />
+        <activity
             android:name=".Resultados"
             android:exported="false" />
         <activity

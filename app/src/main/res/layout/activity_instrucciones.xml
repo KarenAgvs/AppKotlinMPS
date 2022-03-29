@@ -91,4 +91,35 @@
         app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="378dp" />
+
+    <Button
+        android:id="@+id/buttonatras1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="308dp"
+        android:backgroundTint="#f4282e"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="100dp"
+        android:text="@string/atras"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inst5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-80dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="340dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/inst_6" />
 </FrameLayout>

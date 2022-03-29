@@ -3,7 +3,7 @@
     <string name="ayuda">Ayuda</string>
     <string name="atras">Atrás</string>
     <string name="iniciar_reg_stro">Iniciar Regístro</string>
-    <string name="bienvendo_usuario">¡Bienvendo Usuario!</string>
+    <string name="bienvendo_usuario">¡Bienvenido Usuario!</string>
     <string name="estad_sticas">Estadísticas</string>
     <string name="nota_3">Nota 3</string>
     <string name="nota_5">Nota 5</string>
@@ -11,7 +11,7 @@
     <string name="nota_2">Nota 2</string>
     <string name="nota_4">Nota 4</string>
     <string name="materia1">Materia 1</string>
-    <string name ="materia2">Materia 2</string>
+    <string name="materia2">Materia 2</string>
     <string name="materia3">Materia 3</string>
     <string name="materia4">Materia 4</string>
     <string name="materia5">Materia 5</string>
@@ -25,7 +25,10 @@
     <string name="parr_1">Usar nuestra aplicación es muy sencillo, y aquí te indicaremos los pasos:</string>
     <string name="inst_1">Lo primero que debes hacer es clickear el botón Iniciar registro.</string>
     <string name="inst_2">Nuestra aplicación te llevará a un formulario, donde debes poner tus datos.</string>
-    <string name="inst_3">Posteriormente a que hayas puesto tus datos en el formulario clickearás el botón Ver resultados</string>
+    <string name="inst_3">Posteriormente a que hayas llenado tus datos en el formulario clickearás el botón Ver resultados</string>
     <string name="inst4_">Se cargará una pantalla con tus resultados</string>
+    <string name="inst5">Si lo que deseas es revisar las estadisticas de nuestros registros vas a volver a la pantalla de inicio, el botón Estadísticas se encargará mostrarte la información.</string>
+    <string name="inst_6">Finalmente la pantalla de las estadísticas te mostrará datos como la cantidad de estudiantes que pierden, los que ganan, los que pueden recuperar y el total de estudiantes procesados.</string>
+
 
 </resources>

@@ -1,6 +1,6 @@
 package clases
 
-class Materia (nombre:String, nota:Double) {
+public class Materia (nombre:String, nota:Double) {
 
     var nombreMateria: String = nombre
     var promedioMateria: Double = nota
