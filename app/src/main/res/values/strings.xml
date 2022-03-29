@@ -21,4 +21,11 @@
     <string name="tel_fono">Teléfono</string>
     <string name="identificaci_n">identificación</string>
     <string name="ver_resultados">Ver resultados</string>
+    <string name="instrucciones">Intrucciones de uso</string>
+    <string name="parr_1">Usar nuestra aplicación es muy sencillo, y aquí te indicaremos los pasos:</string>
+    <string name="inst_1">Lo primero que debes hacer es clickear el botón Iniciar registro.</string>
+    <string name="inst_2">Nuestra aplicación te llevará a un formulario, donde debes poner tus datos.</string>
+    <string name="inst_3">Posteriormente a que hayas puesto tus datos en el formulario clickearás el botón Ver resultados</string>
+    <string name="inst4_">Se cargará una pantalla con tus resultados</string>
+
 </resources>
