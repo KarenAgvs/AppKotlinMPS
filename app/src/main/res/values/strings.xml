@@ -25,7 +25,7 @@
     <string name="parr_1">Usar nuestra aplicación es muy sencillo, y aquí te indicaremos los pasos:</string>
     <string name="inst_1">Lo primero que debes hacer es clickear el botón Iniciar registro.</string>
     <string name="inst_2">Nuestra aplicación te llevará a un formulario, donde debes poner tus datos.</string>
-    <string name="inst_3">Posteriormente a que hayas llenado tus datos en el formulario clickearás el botón Ver resultados</string>
+    <string name="inst_3">Posteriormente a que hayas llenado tus datos en el formulario clickearás el botón Ver resultados,</string>
     <string name="inst4_">Se cargará una pantalla con tus resultados</string>
     <string name="inst5">Si lo que deseas es revisar las estadisticas de nuestros registros vas a volver a la pantalla de inicio, el botón Estadísticas se encargará mostrarte la información.</string>
     <string name="inst_6">Finalmente la pantalla de las estadísticas te mostrará datos como la cantidad de estudiantes que pierden, los que ganan, los que pueden recuperar y el total de estudiantes procesados.</string>

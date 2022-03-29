@@ -12,22 +12,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val buttoniniciarregistro: Button =findViewById(R.id.buttoniniciarregistro)
-        buttoniniciarregistro.setOnClickListener{OnClick() }
+        buttoniniciarregistro.setOnClickListener{onClick() }
         val buttonayuda:Button=findViewById(R.id.buttonayuda)
-        buttonayuda.setOnClickListener{OnClickAtras()}
+        buttonayuda.setOnClickListener{onClickatras()}
         val buttonestadisticas:Button=findViewById(R.id.buttonestadisticas)
-        buttonestadisticas.setOnClickListener{OnClickEstadis()}
+        buttonestadisticas.setOnClickListener{onClickestadis()}
 
         }
-    private fun OnClickEstadis(){
+    private fun onClickestadis(){
         startActivity(Intent(this,Estadisticas::class.java))
     }
 
-    private fun OnClickAtras() {
+    private fun onClickatras() {
         startActivity(Intent(this,Instrucciones::class.java))
     }
 
-    private fun OnClick() {
+    private fun onClick() {
         startActivity(Intent(this,Registro::class.java))
     }
 
