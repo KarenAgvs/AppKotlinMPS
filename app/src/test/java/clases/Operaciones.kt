@@ -1,7 +1,6 @@
 package clases
-import java.io.Serializable
 
-class Operaciones : Serializable {
+class Operaciones  {
 
     var listaEstudiantes: ArrayList<Estudiante> =arrayListOf<Estudiante>()
 
@@ -21,5 +20,7 @@ class Operaciones : Serializable {
         var prom=(est.nota1+est.nota2+est.nota3+est.nota4+est.nota5)/5
 
         return prom
+
+
     }
 }

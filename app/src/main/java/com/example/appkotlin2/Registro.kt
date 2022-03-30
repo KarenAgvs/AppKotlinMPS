@@ -14,7 +14,6 @@ class Registro : AppCompatActivity(){
     var txt_edad: EditText?=null
     var txttelefono: EditText?=null
     var txtdireccion: EditText?=null
-
     var txtMateria1: EditText?=null
     var txtMateria2: EditText?=null
     var txtMateria3: EditText?=null
@@ -33,6 +32,7 @@ class Registro : AppCompatActivity(){
         iniciarComponentes()
         val buttonatras:Button=findViewById(R.id.buttonatras1)
         buttonatras.setOnClickListener{atrasmain()}
+        /*var operaciones: Operaciones?=null*/
     }
     private fun atrasmain(){
         startActivity(Intent(this,MainActivity::class.java))
@@ -42,7 +42,7 @@ class Registro : AppCompatActivity(){
     private fun iniciarComponentes(){
         var btnVeresultados: Button =findViewById(R.id.buttonresultados)
         btnVeresultados.setOnClickListener{registrarEstudiante()}
-            /*operaciones=Operaciones()
+            /*operaciones=Operaciones()*/
             var txt_nombre:EditText =findViewById(R.id.txnombre)
             var txt_identificacion:EditText = findViewById(R.id.textidentificacon)
             var txt_edad:EditText =findViewById(R.id.txtedad)
@@ -59,7 +59,7 @@ class Registro : AppCompatActivity(){
             var txtMateria4:EditText =findViewById(R.id.txtmateria4)
             var txtMateria5:EditText = findViewById(R.id.txtmateria5)
             var txtNota4:EditText =findViewById(R.id.txtnota4)
-            var txtNota5:EditText =findViewById  (R.id.txtnota5)*/
+            var txtNota5:EditText =findViewById (R.id.txtnota5)
 
 
 
@@ -91,12 +91,32 @@ class Registro : AppCompatActivity(){
         Toast.makeText(getApplicationContext(),
         "Datos registrados con éxito",Toast.LENGTH_LONG).show()
         startActivity(Intent(this,Resultados::class.java))
-        /*var txtnombre:EditText?=null
-        var txtviewnombre:EditText?=null
+
+
+
         val mibundle: Bundle=Bundle()
-        mibundle.putString("Nombre",txtnombre!!.text.toString())
+
+        promedio
+
+        mibundle.putString("Nombre",est.nombre)
+        mibundle.putString("Documento",est.documento)
+        mibundle.putInt("Edad",est.edad)
+        mibundle.putString("Telefono", est.telefono)
+        mibundle.putString("Direccion", est.direccion)
+
+        mibundle.putString("Materia1",est.materia1)
+        mibundle.putString("Materia2",est.materia2)
+        mibundle.putString("Materia3",est.materia3)
+        mibundle.putDouble("Nota1",est.nota1)
+        mibundle.putDouble("Nota2",est.nota2)
+        mibundle.putDouble("Nota3",est.nota3)
+        mibundle.putString("Materia4",est.materia4)
+        mibundle.putString("Materia5",est.materia5)
+        mibundle.putDouble("Nota4",est.nota4)
+        mibundle.putDouble("Nota5",est.nota5)
+
         intent.putExtras(mibundle)
-        startActivity(intent)*/
+        startActivity(intent)
 
 
     }
