@@ -7,9 +7,15 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
+   /* var operaciones: Operaciones?=null*/
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        /*operaciones = Operaciones()
+        iniciarComponentes()*/
 
         val buttoniniciarregistro: Button =findViewById(R.id.buttoniniciarregistro)
         buttoniniciarregistro.setOnClickListener{onClick() }

@@ -1,7 +1,7 @@
 package clases
+import java.io.Serializable
 
-
-public class Estudiante {
+public class Estudiante : Serializable {
 
     var nombre: String=""
     var documento: String=""

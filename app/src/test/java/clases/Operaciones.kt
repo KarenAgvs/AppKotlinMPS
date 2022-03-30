@@ -1,6 +1,7 @@
 package clases
+import java.io.Serializable
 
-class Operaciones {
+class Operaciones : Serializable {
 
     var listaEstudiantes: ArrayList<Estudiante> =arrayListOf<Estudiante>()
 
