@@ -1,4 +1,4 @@
-package clases
+package com.example.appkotlin2
 /*import java.io.Serializable*/
 
 public class Estudiante  {

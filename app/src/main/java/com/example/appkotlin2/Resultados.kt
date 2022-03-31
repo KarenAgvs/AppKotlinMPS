@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Resultados : AppCompatActivity() {
@@ -30,9 +29,9 @@ class Resultados : AppCompatActivity() {
             "Materia 5:${miBundle.getString("Materia5")}"
             "nota:${miBundle.getString("Nota4")}"
             "nota:${miBundle.getString("Nota5")}"
+            "Promedio:${miBundle.getDouble("Promedio")}"
 
         }
-
 
     }
 
@@ -41,12 +40,12 @@ class Resultados : AppCompatActivity() {
     }
 
 
-    if(est.nota1 < 0 ||  est.nota2 < 0 || est.nota3 < 0 || est.nota4 <0 || est.nota5 <0){
+    /*if(est.nota1 < 0 ||  est.nota2 < 0 || est.nota3 < 0 || est.nota4 <0 || est.nota5 <0){
         Toast.makeText(applicationContext()"Ingresa una nota válida", Toast.LENGTH_LONG).show()
     }
 
     else if(est.nota1 > 5 ||  est.nota2 > 5 || est.nota3 > 5 || est.nota4 > 5 || est.nota5 > 5){
         Toast.makeText(applicationContext()"Ingresa una nota válida", Toast.LENGTH_LONG).show()
-    }
+    }*/
 
 }

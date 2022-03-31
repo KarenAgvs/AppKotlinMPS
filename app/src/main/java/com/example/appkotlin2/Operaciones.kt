@@ -1,4 +1,4 @@
-package clases
+package com.example.appkotlin2
 
 class Operaciones  {
 

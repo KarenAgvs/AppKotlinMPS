@@ -32,7 +32,7 @@ class Registro : AppCompatActivity(){
         iniciarComponentes()
         val buttonatras:Button=findViewById(R.id.buttonatras1)
         buttonatras.setOnClickListener{atrasmain()}
-        /*var operaciones: Operaciones?=null*/
+        var operaciones: Operaciones?=null
     }
     private fun atrasmain(){
         startActivity(Intent(this,MainActivity::class.java))
@@ -42,7 +42,8 @@ class Registro : AppCompatActivity(){
     private fun iniciarComponentes(){
         var btnVeresultados: Button =findViewById(R.id.buttonresultados)
         btnVeresultados.setOnClickListener{registrarEstudiante()}
-            /*operaciones=Operaciones()*/
+
+            var operaciones=Operaciones()
             var txt_nombre:EditText =findViewById(R.id.txnombre)
             var txt_identificacion:EditText = findViewById(R.id.textidentificacon)
             var txt_edad:EditText =findViewById(R.id.txtedad)
@@ -66,7 +67,7 @@ class Registro : AppCompatActivity(){
         }
     private fun registrarEstudiante(){
 
-        /*var est:Estudiante= Estudiante()
+        var est:Estudiante= Estudiante()
         est.nombre=txt_nombre?.text.toString()
         est.documento= txt_identificacion?.text.toString()
         est.edad=txt_edad?.text.toString().toInt()
@@ -86,7 +87,7 @@ class Registro : AppCompatActivity(){
 
         est.promedio=operaciones!!calcularPromedio(est)
         operaciones.registrarEstudiante(est)
-        operaciones?.imprimirListaEstudiantes()*/
+        operaciones?.imprimirListaEstudiantes()
 
         Toast.makeText(getApplicationContext(),
         "Datos registrados con éxito",Toast.LENGTH_LONG).show()
@@ -94,28 +95,27 @@ class Registro : AppCompatActivity(){
 
 
 
-        val mibundle: Bundle=Bundle()
+        val miBundle: Bundle=Bundle()
 
-        promedio
+        miBundle.putString("Nombre",est.nombre)
+        miBundle.putString("Documento",est.documento)
+        miBundle.putInt("Edad",est.edad)
+        miBundle.putString("Telefono", est.telefono)
+        miBundle.putString("Direccion", est.direccion)
 
-        mibundle.putString("Nombre",est.nombre)
-        mibundle.putString("Documento",est.documento)
-        mibundle.putInt("Edad",est.edad)
-        mibundle.putString("Telefono", est.telefono)
-        mibundle.putString("Direccion", est.direccion)
+        miBundle.putString("Materia1",est.materia1)
+        miBundle.putString("Materia2",est.materia2)
+        miBundle.putString("Materia3",est.materia3)
+        miBundle.putDouble("Nota1",est.nota1)
+        miBundle.putDouble("Nota2",est.nota2)
+        miBundle.putDouble("Nota3",est.nota3)
+        miBundle.putString("Materia4",est.materia4)
+        miBundle.putString("Materia5",est.materia5)
+        miBundle.putDouble("Nota4",est.nota4)
+        miBundle.putDouble("Nota5",est.nota5)
+        miBundle.putDouble("Promedio",est.promedio)
 
-        mibundle.putString("Materia1",est.materia1)
-        mibundle.putString("Materia2",est.materia2)
-        mibundle.putString("Materia3",est.materia3)
-        mibundle.putDouble("Nota1",est.nota1)
-        mibundle.putDouble("Nota2",est.nota2)
-        mibundle.putDouble("Nota3",est.nota3)
-        mibundle.putString("Materia4",est.materia4)
-        mibundle.putString("Materia5",est.materia5)
-        mibundle.putDouble("Nota4",est.nota4)
-        mibundle.putDouble("Nota5",est.nota5)
-
-        intent.putExtras(mibundle)
+        intent.putExtras(miBundle)
         startActivity(intent)
 
 
