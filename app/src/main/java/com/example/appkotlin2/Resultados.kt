@@ -13,11 +13,11 @@ class Resultados : AppCompatActivity() {
         val buttonatras2:Button=findViewById(R.id.buttonatras2)
         buttonatras2.setOnClickListener{volveralregistro()}
 
-         var txtresults=findViewById<TextView>(R.id.txviewresults)
-        var miBundle:Bundle?=this.intent.extras
+        val txtresults=findViewById<TextView>(R.id.txviewresults)
+        val miBundle:Bundle?=this.intent.extras
 
         if(miBundle!=null){
-            txtresults.text="Estudiante: ${miBundle.getString("Nombre")}"
+            txtresults.text="Estudiante:${miBundle.getString("Nombre")}"
             "Identificación:${miBundle.getString("Documento")}"
             "Materia 1:${miBundle.getString("Materia1")}"
             "Materia 2:${miBundle.getString("Materia2")}"
@@ -40,12 +40,6 @@ class Resultados : AppCompatActivity() {
     }
 
 
-    /*if(est.nota1 < 0 ||  est.nota2 < 0 || est.nota3 < 0 || est.nota4 <0 || est.nota5 <0){
-        Toast.makeText(applicationContext()"Ingresa una nota válida", Toast.LENGTH_LONG).show()
-    }
 
-    else if(est.nota1 > 5 ||  est.nota2 > 5 || est.nota3 > 5 || est.nota4 > 5 || est.nota5 > 5){
-        Toast.makeText(applicationContext()"Ingresa una nota válida", Toast.LENGTH_LONG).show()
-    }*/
 
 }

@@ -25,6 +25,7 @@ class Registro : AppCompatActivity(){
     var txtNota4: EditText?=null
     var txtNota5: EditText?=null
 
+    var operaciones : Operaciones?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +33,7 @@ class Registro : AppCompatActivity(){
         iniciarComponentes()
         val buttonatras:Button=findViewById(R.id.buttonatras1)
         buttonatras.setOnClickListener{atrasmain()}
-        var operaciones: Operaciones?=null
+
     }
     private fun atrasmain(){
         startActivity(Intent(this,MainActivity::class.java))
@@ -40,27 +41,31 @@ class Registro : AppCompatActivity(){
 
 
     private fun iniciarComponentes(){
-        var btnVeresultados: Button =findViewById(R.id.buttonresultados)
+        val btnVeresultados: Button =findViewById(R.id.buttonresultados)
         btnVeresultados.setOnClickListener{registrarEstudiante()}
 
-            var operaciones=Operaciones()
-            var txt_nombre:EditText =findViewById(R.id.txnombre)
-            var txt_identificacion:EditText = findViewById(R.id.textidentificacon)
-            var txt_edad:EditText =findViewById(R.id.txtedad)
-            var txttelefono:EditText =findViewById(R.id.txttelefono)
-            var txtdireccion:EditText =findViewById(R.id.txtdireccion)
 
 
-            var txtMateria1:EditText = findViewById (R.id.txtmateria1)
-            var txtMateria2:EditText = findViewById(R.id.txtmateria2)
-            var txtMateria3:EditText = findViewById(R.id.txtmateria3)
-            var txtNota1:EditText =findViewById(R.id.txtnota1)
-            var txtNota2:EditText =findViewById(R.id.txtnota2)
-            var txtNota3:EditText =findViewById(R.id.txtnota3)
-            var txtMateria4:EditText =findViewById(R.id.txtmateria4)
-            var txtMateria5:EditText = findViewById(R.id.txtmateria5)
-            var txtNota4:EditText =findViewById(R.id.txtnota4)
-            var txtNota5:EditText =findViewById (R.id.txtnota5)
+
+        operaciones = Operaciones()
+
+        var txt_nombre:EditText =findViewById(R.id.txnombre)
+        var txt_identificacion:EditText = findViewById(R.id.textidentificacon)
+        var txt_edad:EditText =findViewById(R.id.txtedad)
+        var txttelefono:EditText =findViewById(R.id.txttelefono)
+        var txtdireccion:EditText =findViewById(R.id.txtdireccion)
+
+
+        var txtMateria1:EditText = findViewById (R.id.txtmateria1)
+        var txtMateria2:EditText = findViewById(R.id.txtmateria2)
+        var txtMateria3:EditText = findViewById(R.id.txtmateria3)
+        var txtNota1:EditText =findViewById(R.id.txtnota1)
+        var txtNota2:EditText =findViewById(R.id.txtnota2)
+        var txtNota3:EditText =findViewById(R.id.txtnota3)
+        var txtMateria4:EditText =findViewById(R.id.txtmateria4)
+        var txtMateria5:EditText = findViewById(R.id.txtmateria5)
+        var txtNota4:EditText =findViewById(R.id.txtnota4)
+        var txtNota5:EditText =findViewById (R.id.txtnota5)
 
 
 
@@ -85,13 +90,28 @@ class Registro : AppCompatActivity(){
         est.nota4=txtNota4?.text.toString().toDouble()
         est.nota5=txtNota5?.text.toString().toDouble()
 
-        est.promedio=operaciones!!calcularPromedio(est)
-        operaciones.registrarEstudiante(est)
-        operaciones?.imprimirListaEstudiantes()
+        if(est.nota1 < 0 ||  est.nota2 < 0 || est.nota3 < 0 || est.nota4 <0 || est.nota5 <0){
+            Toast.makeText(getApplicationContext(),
+                "Ingresa una nota válida (Entre 1 y 5)",Toast.LENGTH_LONG).show()
+        }
 
-        Toast.makeText(getApplicationContext(),
-        "Datos registrados con éxito",Toast.LENGTH_LONG).show()
-        startActivity(Intent(this,Resultados::class.java))
+        else if(est.nota1 > 5 ||  est.nota2 > 5 || est.nota3 > 5 || est.nota4 > 5 || est.nota5 > 5){
+            Toast.makeText(getApplicationContext(),
+                "Ingresa una nota válida (Entre 1 y 5)",Toast.LENGTH_LONG).show()
+        }
+
+
+
+        else{
+
+            est.promedio=operaciones!!calcularPromedio(est)
+            operaciones!!.registrarEstudiante(est)
+            operaciones?.imprimirListaEstudiantes()
+
+            Toast.makeText(getApplicationContext(),
+                "Datos registrados con éxito",Toast.LENGTH_LONG).show()
+            startActivity(Intent(this,Resultados::class.java))
+        }
 
 
 
@@ -117,6 +137,7 @@ class Registro : AppCompatActivity(){
 
         intent.putExtras(miBundle)
         startActivity(intent)
+
 
 
     }
