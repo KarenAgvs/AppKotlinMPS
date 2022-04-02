@@ -1,5 +1,6 @@
 package com.example.appkotlin2
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -7,12 +8,14 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class Resultados : AppCompatActivity() {
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultados)
         val buttonatras2:Button=findViewById(R.id.buttonatras2)
         buttonatras2.setOnClickListener{volveralregistro()}
 
+        val textpromedio=findViewById<TextView>(R.id.textpromedio)
         val txtresults=findViewById<TextView>(R.id.txviewresults)
         val miBundle:Bundle?=this.intent.extras
 
@@ -38,8 +41,5 @@ class Resultados : AppCompatActivity() {
     private fun volveralregistro() {
         startActivity(Intent(this,Registro::class.java))
     }
-
-
-
 
 }

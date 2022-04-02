@@ -1,19 +1,35 @@
 package com.example.appkotlin2
 
+
 class Operaciones  {
+    companion object{
 
-
-    var listaEstudiantes: ArrayList<Estudiante> =arrayListOf<Estudiante>()
-    var ListaAprueban: ArrayList<Estudiante> = arrayListOf<Estudiante>()
-    var ListaRecuperan: ArrayList<Estudiante> = arrayListOf<Estudiante>()
-    var ListaReprueban: ArrayList<Estudiante> = arrayListOf<Estudiante>()
+        var listaEstudiantes = arrayListOf<Estudiante>()
+        var listaAprueban =  arrayListOf<Estudiante>()
+        var listaRecuperan=  arrayListOf<Estudiante>()
+        var listaReprueban= arrayListOf<Estudiante>()
+    }
 
 
     fun registrarEstudiante(estudiante: Estudiante){
 
         if(estudiante.promedio>3.5)
         listaEstudiantes.add(estudiante)
+        listaAprueban.add(estudiante)
     }
+
+    fun registrarEstudianteAprobado(estudiante: Estudiante){
+        listaAprueban.add(estudiante)
+    }
+
+    fun registrarEstudienteRecupera(estudiante: Estudiante){
+        listaRecuperan.add(estudiante)
+    }
+
+    fun registrarEstudianteReprobado(estudiante: Estudiante){
+        listaReprueban.add(estudiante)
+    }
+
 
     fun imprimirListaEstudiantes(){
         for(est in listaEstudiantes){
