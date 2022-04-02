@@ -109,16 +109,12 @@ class Registro : AppCompatActivity(){
                 est.promedio = operaciones!! calcularPromedio (est)
                 operaciones!!.registrarEstudiante(est)
                 operaciones?.imprimirListaEstudiantes()
-            operaciones.
-
                 startActivity(Intent(this, Resultados::class.java))
-
                 Toast.makeText(
                     getApplicationContext(),
                     "Datos registrados con éxito", Toast.LENGTH_LONG
                 ).show()
 
-            }
 
             val miBundle: Bundle = Bundle()
 
@@ -142,6 +138,11 @@ class Registro : AppCompatActivity(){
 
             intent.putExtras(miBundle)
             startActivity(intent)
+
+
+            }
+
+
 
 
 

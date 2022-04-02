@@ -29,6 +29,9 @@
     <string name="inst4_">Se cargará una pantalla con tus resultados</string>
     <string name="inst5">Si lo que deseas es revisar las estadisticas de nuestros registros vas a volver a la pantalla de inicio, el botón Estadísticas se encargará mostrarte la información.</string>
     <string name="inst_6">Finalmente la pantalla de las estadísticas te mostrará datos como la cantidad de estudiantes que pierden, los que ganan, los que pueden recuperar y el total de estudiantes procesados.</string>
+    <string name="promedio">Promedio</string>
+    <string name="resultado">Resultado:</string>
+
 
 
 </resources>
