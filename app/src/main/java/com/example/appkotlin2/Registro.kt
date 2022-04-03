@@ -67,9 +67,7 @@ class Registro : AppCompatActivity(){
         txtNota4=findViewById(R.id.txtnota4)
         txtNota5 =findViewById (R.id.txtnota5)
 
-
         }
-
 
     private fun registrarEstudiante() {
 
@@ -109,10 +107,12 @@ class Registro : AppCompatActivity(){
                 est.promedio = operaciones!! calcularPromedio (est)
                 operaciones!!.registrarEstudiante(est)
                 operaciones?.imprimirListaEstudiantes()
-                startActivity(Intent(this, Resultados::class.java))
+
+                val intent = Intent(this,Resultados::class.java)
                 Toast.makeText(
                     getApplicationContext(),
-                    "Datos registrados con éxito", Toast.LENGTH_LONG
+                    "Datos registrados con éxito",
+                    Toast.LENGTH_LONG
                 ).show()
 
 
@@ -149,30 +149,6 @@ class Registro : AppCompatActivity(){
 
 
         }
-
-
-        /*val miBundle: Bundle = Bundle()
-
-        miBundle.putString("Nombre", est.nombre)
-        miBundle.putString("Documento", est.documento)
-        miBundle.putInt("Edad", est.edad)
-        miBundle.putString("Telefono", est.telefono)
-        miBundle.putString("Direccion", est.direccion)
-
-        miBundle.putString("Materia1", est.materia1)
-        miBundle.putString("Materia2", est.materia2)
-        miBundle.putString("Materia3", est.materia3)
-        miBundle.putDouble("Nota1", est.nota1)
-        miBundle.putDouble("Nota2", est.nota2)
-        miBundle.putDouble("Nota3", est.nota3)
-        miBundle.putString("Materia4", est.materia4)
-        miBundle.putString("Materia5", est.materia5)
-        miBundle.putDouble("Nota4", est.nota4)
-        miBundle.putDouble("Nota5", est.nota5)
-        miBundle.putDouble("Promedio", est.promedio)
-
-        intent.putExtras(miBundle)
-        startActivity(intent)*/
 
     }
 
