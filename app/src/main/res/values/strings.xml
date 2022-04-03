@@ -31,6 +31,10 @@
     <string name="inst_6">Finalmente la pantalla de las estadísticas te mostrará datos como la cantidad de estudiantes que pierden, los que ganan, los que pueden recuperar y el total de estudiantes procesados.</string>
     <string name="promedio">Promedio</string>
     <string name="resultado">Resultado:</string>
+    <string name="totalestudiantes">Total de estudiantes registrados:</string>
+    <string name="aprobados">Estudiantes aprobados:</string>
+    <string name="recuperan">Estudiantes recuperación:</string>
+    <string name="reprobados">Estudiantes reprobados:</string>
 
 
 

@@ -1,7 +1,7 @@
 package com.example.appkotlin2
+import java.io.Serializable
 
-
-class Operaciones  {
+class Operaciones: Serializable {
     companion object{
 
         var listaEstudiantes = arrayListOf<Estudiante>()

@@ -1,7 +1,7 @@
 package com.example.appkotlin2
-/*import java.io.Serializable*/
+import java.io.Serializable
 
-public class Estudiante  {
+public class Estudiante:Serializable{
 
     var nombre: String=""
     var documento: String=""
