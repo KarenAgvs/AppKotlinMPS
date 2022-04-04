@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estadisticas"
+    android:background="#181818">
+
+
+    <Button
+        android:id="@+id/buttonatras"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="1000dp"
+        android:layout_marginEnd="308dp"
+        android:backgroundTint="#f4282e"
+        android:text="@string/atras"
+        tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:layout_width="302dp"
+            android:layout_height="470dp"
+            android:background="#404040"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            >
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:gravity="center_vertical"
+        android:text="@string/totalestudiantes"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp"
+        />
+
+    <TextView
+        android:id="@+id/textviewtotalest"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="230dp"
+        android:textColor="#fff"
+        android:text="@string/aprobados" />
+
+    <TextView
+        android:id="@+id/textViewaprobados"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recuperan"
+        android:textColor="#fff"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewrecuperacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="#fff"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reprobados"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewreprobados"
+        android:textColor="#fff"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="450dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+</FrameLayout>
