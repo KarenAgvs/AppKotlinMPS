@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#181818"
+    android:orientation="vertical"
+    >
+
+
+    <Button
+        android:id="@+id/buttonayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#f4282e"
+        android:layout_gravity="top|end"
+        android:text="@string/ayuda"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttoniniciarregistro"
+        android:layout_width="319dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#f4282e"
+        android:layout_gravity="center"
+        android:text="@string/iniciar_reg_stro"/>
+
+    <Button
+        android:id="@+id/buttonestadisticas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#f4282e"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="250dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/estad_sticas"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textbienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:layout_marginBottom="90dp"
+        android:text="@string/bienvendo_usuario"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="1dp"
+        app:srcCompat="@drawable/estudiantes" />
+
+</FrameLayout>
