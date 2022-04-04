@@ -22,20 +22,11 @@
     <string name="identificaci_n">identificación</string>
     <string name="ver_resultados">Ver resultados</string>
     <string name="instrucciones">Intrucciones de uso</string>
-    <string name="parr_1">Usar nuestra aplicación es muy sencillo, y aquí te indicaremos los pasos:</string>
-    <string name="inst_1">Lo primero que debes hacer es clickear el botón Iniciar registro.</string>
-    <string name="inst_2">Nuestra aplicación te llevará a un formulario, donde debes poner tus datos.</string>
-    <string name="inst_3">Posteriormente a que hayas llenado tus datos en el formulario clickearás el botón Ver resultados,</string>
-    <string name="inst4_">Se cargará una pantalla con tus resultados</string>
-    <string name="inst5">Si lo que deseas es revisar las estadisticas de nuestros registros vas a volver a la pantalla de inicio, el botón Estadísticas se encargará mostrarte la información.</string>
-    <string name="inst_6">Finalmente la pantalla de las estadísticas te mostrará datos como la cantidad de estudiantes que pierden, los que ganan, los que pueden recuperar y el total de estudiantes procesados.</string>
     <string name="promedio">Promedio</string>
     <string name="resultado">Resultado:</string>
     <string name="totalestudiantes">Total de estudiantes registrados:</string>
     <string name="aprobados">Estudiantes aprobados:</string>
     <string name="recuperan">Estudiantes recuperación:</string>
     <string name="reprobados">Estudiantes reprobados:</string>
-
-
-
+    <string name="instruccionesparrafo">Usar nuestra aplicación es muy sencillo, y aquí te indicaremos los pasos:Lo primero que debes hacer es clickear el botón Iniciar registro. Nuestra aplicación te llevará a un formulario, donde debes poner tus datos Posteriormente a que los hayas llenado clickearás el botón Ver resultados,Se cargará una pantalla con tus resultados. Si lo que deseas es revisar son las estadisticas de nuestros registros vas a volver a la pantalla de inicio, el botón Estadísticas se encargará mostrarte la información  Finalmente la pantalla de las estadísticas te mostrará datos como la cantidad de estudiantes que pierden, los que ganan, los que pueden recuperar y el total de estudiantes procesados.</string>
 </resources>
