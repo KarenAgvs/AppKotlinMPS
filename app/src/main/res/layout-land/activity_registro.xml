@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    android:background="#181818"
+    >
+
+    <EditText
+        android:id="@+id/txtdireccion"
+        android:layout_width="145dp"
+        android:textColor="#ffff"
+        android:layout_height="59dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-90dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/direcci_n"
+        android:inputType="textPostalAddress"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <EditText
+        android:id="@+id/txnombre"
+        android:layout_width="128dp"
+        android:layout_height="58dp"
+        android:layout_gravity="start"
+        android:textColor="#ffff"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="20dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <EditText
+        android:id="@+id/textidentificacon"
+        android:layout_width="95dp"
+        android:layout_height="67dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/identificaci_n"
+        android:inputType="number"
+        android:textColor="#ffff"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <EditText
+        android:id="@+id/txtedad"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="140dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="370dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:textColor="#ffff"
+        android:ems="10"
+        android:hint="@string/edad"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <EditText
+        android:id="@+id/txttelefono"
+        android:layout_width="161dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="190dp"
+        android:layout_marginBottom="145dp"
+        android:layout_marginRight="70dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/tel_fono"
+        android:inputType="number"
+
+        android:minHeight="48dp"
+        android:textColor="#ffff"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <EditText
+        android:id="@+id/txtnota1"
+        android:layout_width="103dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-20dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:textColor="#ffff"
+        android:ems="10"
+        android:hint="@string/nota_1"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <EditText
+        android:id="@+id/txtnota5"
+        android:layout_width="87dp"
+        android:layout_height="71dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="60dp"
+        android:autofillHints=""
+        android:textColor="#ffff"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/nota_5"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+    <EditText
+        android:id="@+id/txtnota2"
+        android:layout_width="116dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-20dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:textColor="#ffff"
+        android:hint="@string/nota_2"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        android:layout_marginRight="120dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+
+    <EditText
+        android:id="@+id/txtmateria1"
+        android:layout_width="107dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-50dp"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/materia1"
+        android:inputType="textPersonName"
+        android:textColor="#ffff"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <EditText
+        android:id="@+id/txtnota3"
+        android:layout_width="98dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="280dp"
+        android:layout_marginBottom="-13dp"
+        android:autofillHints=""
+        android:textColor="#ffff"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/nota_3"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <EditText
+        android:id="@+id/txtnota4"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="385dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:textColor="#ffff"
+        android:ems="10"
+        android:hint="@string/nota_4"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+    <Button
+        android:id="@+id/buttonresultados"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f4282e"
+        android:text="@string/ver_resultados"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_gravity="bottom|end"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonatras1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="308dp"
+        android:backgroundTint="#f4282e"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="1000dp"
+        android:text="@string/atras"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtmateria2"
+        android:layout_width="114dp"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:textColor="#ffff"
+        android:textColorHint="#757575"
+        android:inputType="textPersonName"
+        android:hint="@string/materia2"
+        android:layout_marginRight="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="#fff"/>
+
+    <EditText
+        android:id="@+id/txtmateria3"
+        android:layout_width="93dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/materia3"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        android:textColor="#ffff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <EditText
+        android:id="@+id/txtmateria4"
+        android:layout_width="95dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="370dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/materia4"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        android:textColor="#ffff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <EditText
+        android:id="@+id/txtmateria5"
+        android:layout_width="97dp"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#fff"
+        android:textColor="#ffff"
+        android:ems="10"
+        android:hint="@string/materia5"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575" />
+
+
+
+
+
+
+</FrameLayout>
