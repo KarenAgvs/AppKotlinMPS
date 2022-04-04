@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    android:background="#181818"
+    >
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txviewresults"
+                android:layout_width="302dp"
+                android:layout_height="470dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:textColor="#ffff"
+                android:padding="20dp"
+                android:paddingTop="1000dp"
+                android:background="#404040"/>
+
+            <TextView
+                android:id="@+id/textmensaje"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="-120dp"
+                android:layout_gravity="center"
+                android:textColor="#ffff"
+                android:layout_height="38dp"
+                />
+
+            <Button
+                android:id="@+id/buttonatras2"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f4282e"
+                android:text="@string/atras"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>
