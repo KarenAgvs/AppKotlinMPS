@@ -58,11 +58,13 @@ class Resultados : AppCompatActivity() {
                 "Nota: ${miBundle.getDouble("Nota5")}\n"+
                 "Promedio: ${miBundle.getDouble("Promedio")}\n"
 
-            mensaje.text="El estudiante ha aprobado."
-            operaciones?.registrarEstudianteAprobado(est)
+                mensaje.text="El estudiante ha aprobado."
+
+
         }
 
-        if(promedio!! <3.5 && promedio!!>2.5){
+        if(promedio!! <3.5 && promedio!!>2.5)
+            if(miBundle!=null){
             txtresults.text="Estudiante :${miBundle.getString("Nombre")}\n"+
                     "Identificación :${miBundle.getString("Documento")}\n"+
                     "Edad: ${miBundle.getInt("Edad")}\n"+
@@ -78,10 +80,13 @@ class Resultados : AppCompatActivity() {
                     "Nota: ${miBundle.getDouble("Nota5")}\n"+
                     "Promedio: ${miBundle.getDouble("Promedio")}\n"
             mensaje.text="El estudiante reprobó con posibilidad de recuperar"
-            operaciones?.registrarEstudienteRecupera(est)
+
         }
 
-        if(promedio!! < 2.5){
+
+
+        if(promedio!! < 2.5)
+            if(miBundle!=null){
             txtresults.text="Estudiante :${miBundle.getString("Nombre")}\n"+
                     "Identificación :${miBundle.getString("Documento")}\n"+
                     "Edad: ${miBundle.getInt("Edad")}\n"+
@@ -97,7 +102,7 @@ class Resultados : AppCompatActivity() {
                     "Nota: ${miBundle.getDouble("Nota5")}\n"+
                     "Promedio: ${miBundle.getDouble("Promedio")}\n"
             mensaje.text="El estudiante reprobó sin posibilidad de recuperar."
-            operaciones?.registrarEstudianteReprobado(est)
+
         }
 
     }

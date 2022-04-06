@@ -144,10 +144,6 @@ class Registro : AppCompatActivity(){
 
 
 
-
-
-
-
         }
 
     }

@@ -12,21 +12,31 @@ class Operaciones: Serializable {
 
 
     fun registrarEstudiante(estudiante: Estudiante){
-
-        if(estudiante.promedio>3.5)
-        listaEstudiantes.add(estudiante)
-        listaAprueban.add(estudiante)
+        if(estudiante.promedio>3.5){
+            listaEstudiantes.add(estudiante)
+            listaAprueban.add(estudiante)
+        }else if(estudiante.promedio <3.5 && estudiante.promedio>2.5){
+            listaEstudiantes.add(estudiante)
+            listaRecuperan.add(estudiante)
+        }else if(estudiante.promedio<2.5){
+            listaEstudiantes.add(estudiante)
+            listaReprueban.add(estudiante)
+        }
     }
 
     fun registrarEstudianteAprobado(estudiante: Estudiante){
+        if(estudiante.promedio>3.5)
         listaAprueban.add(estudiante)
     }
 
     fun registrarEstudienteRecupera(estudiante: Estudiante){
+        if(estudiante.promedio>2.5 && estudiante.promedio<3.5)
         listaRecuperan.add(estudiante)
+        listaEstudiantes.add(estudiante)
     }
 
     fun registrarEstudianteReprobado(estudiante: Estudiante){
+        if(estudiante.promedio<2.5)
         listaReprueban.add(estudiante)
     }
 
